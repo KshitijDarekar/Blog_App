@@ -1,0 +1,28 @@
+<%- include("partials/header") %>
+<link  type="text/css" rel="stylesheets" href="\public\app.css" >
+
+<div class="newcontainer Jumbotron" style="font-family: cursive;"><h1>Adding Blogs is Fun!</h1></div>
+<form class="add"style="text-align: center;background-color: bisque;"action ="/blogs/" method="POST" >
+  <div class="form-group" style="font-family: fantasy;">
+
+    <div class="form-group" >
+       <label class="col-sm-2 col-form-label">Title    <label>
+       <input class="form-control" type="text" name ="blog[title]" placeholder="title">
+    </div>
+    <div  class="form-group">
+       <label class="col-sm-2 col-form-label">Image<label>
+       <input class="form-control" type="text" name ="blog[image]" placeholder="image">
+    </div class="form-group">
+    <div>
+       <label class="col-sm-2 col-form-label">Blog Content</label>
+    <div>
+       <textarea name="blog[body]" class="form-control" aria-label="With textarea"></textarea>
+    </div>
+    </div>
+       <input class="btn btn-outline-primary" type= "submit">
+  </div>
+</form>
+
+
+
+<%- include("partials/footer") %> 

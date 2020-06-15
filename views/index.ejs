@@ -1,0 +1,18 @@
+
+<%- include("partials/header") %>
+<h1  >Read our Amazing Blogs!<h1>
+    
+    <% blogs.forEach((element)=>{  %>
+     
+  <div  class="card" style="width: 50%; margin:auto;margin-bottom: 5rem;" >
+       <h2  class="card-body"><%= element.title %></h2>
+       <img  class="card-body" src = "<%= element.image %>">
+       <span  class="card-body"><%= element.created.toDateString() %></span> 
+       <p  class="card-body"><%= element.body.substring(0,100) %>...</p>
+       <a  class="card-body" href="/blogs/<%= element._id %>" >Read More.. </a>
+  </div>
+  
+   <% }); %>
+
+   
+<%- include("partials/footer") %> 

@@ -1,0 +1,27 @@
+<%- include("partials/header") %>
+<link  type="text/css" rel="stylesheets" href="/app.css" >
+
+
+<div class="card mt-5" style="width: 50rem;margin: auto">
+  
+<div class="card-title "blog.title %><i class="fa fa-blog"></i></div>
+
+    <h2 ><%= blog.title %></h2>
+    <img class="card-img-top" src = "<%= blog.image %>">
+    <span class="card-text"><%= blog.created.toDateString() %></span>
+    <p class="card-text" ><%= blog.body %></p>
+    
+    <a href="/blogs/<%= blog._id%>/edit" class="btn btn-outline-success">EDIT</a>
+    <form action = "/blogs/<%= blog._id%>?_method=DELETE" method="POST" style="margin: auto;display: inline;">
+    <button  class="btn btn-outline-danger">Delete</button>
+    
+    </form> 
+    
+  </div>
+  
+</div>
+
+
+
+
+<%- include("partials/footer") %> 

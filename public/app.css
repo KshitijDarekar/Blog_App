@@ -1,0 +1,49 @@
+.card-body{
+    
+    
+     background-color:#f1f2f6 ; 
+}
+.card{
+    
+    border-right-style:solid;
+    border-color: #424242;
+}
+body{
+    background-color: white
+}
+h1{
+
+    text-align: center;
+}
+.navbar-custom{
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.navbar-custom .btn-lg{
+
+    background-color: #bdc3c7;
+}
+.navbar-custom > .btn-secondary btn-lg :hover {
+
+        background-color: linear-gradient(315deg, #9dc5c3 0%, #5e5c5c 74%);
+        
+    
+    }
+    .add{
+        background-color: #f1f2f6;
+background-image: linear-gradient(315deg, #f1f2f6 0%, #c9c6c6 74%);
+
+    }
+    .foot{
+        position: relative;
+    }
+ .jumbotron {
+    background-color: #8ae9b3;
+    background-image: linear-gradient(315deg, #8ae9b3 0%, #c8d6e5 74%);
+    
+ }
+ .navbar navbar-custom > .btn btn-secondary btn-lg :hover{
+     color: yellow;
+ }
